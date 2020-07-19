@@ -28,7 +28,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: url("img/background.svg") repeat;
+    background: url("img/background.svg");
+    background-size: cover;
 }
 
 html, body {
@@ -73,7 +74,7 @@ header {
 }
 
 .foreground > * {
-    color: #ccc;
+    color: #fff;
     font-weight: 700;
     margin: 0;
     padding: 0.4em;
@@ -96,7 +97,7 @@ header {
 }
 
 .bottom > a {
-    color: white;
+    color: #fff;
     display: inline;
     padding: 1em;
 }
@@ -298,7 +299,7 @@ footer a{
     overflow: hidden;
     margin: 1rem;
 }
-.speakers > .item > .photo > img {
+.speakers > .item > .photo img {
     position: absolute;
     top: 0;
     left: 0;
