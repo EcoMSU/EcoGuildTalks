@@ -271,12 +271,17 @@ footer a{
     width: 90%;
     margin: 0 auto;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .speakers > .item {
         width: 45%;
     }
     .speakers > .item:last-child:not(:nth-child(even)) {
         width: 60%;
+    }
+}
+@media (min-width: 992px) {
+    .speakers > .item {
+        width: 30%;
     }
 }
 .speakers > .item > .card {
