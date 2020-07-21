@@ -128,7 +128,7 @@ header {
 }
 
 .container {
-    width: calc(100% - 2rem);
+    width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: auto;
@@ -178,6 +178,26 @@ header {
     .card {
         padding:.5rem
     }
+}
+
+.btn {
+    color: #fff;
+    background-color: #4c6fa2;
+    border-color: #4c6fa2;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .5em 1em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
 }
 
 footer {
@@ -263,6 +283,46 @@ footer a{
     width: 100%;
 }
 
+.modal {
+    display: none;
+    height: 100%;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.modal label h2 {
+    text-align: end;
+}
+.back-label {
+    display: none;
+    background-color: #000;
+    opacity: 0;
+    min-width: 0;
+    width: 0;
+}
+
+#modal:checked ~ .back-label {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    opacity: 0.75;
+}
+#modal:checked ~ .modal {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    -webkit-transition: bottom 0.4s cubic-bezier(1, 0, 0, 1);
+    -moz-transition: bottom 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: bottom 0.4s cubic-bezier(1, 0, 0, 1);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
 .speakers {
     display: flex;
     flex-wrap: wrap;
@@ -314,14 +374,14 @@ footer a{
     width: 100%;
 }
 .speakers > .item > .s_zaharova img {
-    top: -23%;
+    transform: translateY(-15.5%);
 }
 
 .partners {
     display: flex;
     flex-flow: column wrap;
-    align-content: space-evenly;
-    justify-content: space-between;
+    align-content: space-between;
+    justify-content: start;
 }
 .partners > .item {
     width: 95%;
@@ -332,7 +392,7 @@ footer a{
 }
 @media (min-width: 992px) {
     .partners {
-        height: 367px;
+        height: 420px;
     }
     .partners > .item {
         width: 45%;
@@ -349,12 +409,12 @@ footer a{
 }
 @media (min-width: 1200px) {
     .partners {
-        height: 494px;
+        height: 570px;
     }
 }
 @media (min-width: 1400px) {
     .partners {
-        height: 217px;
+        height: 410px;
     }
     .partners > .item {
         width: 30%;
