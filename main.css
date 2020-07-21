@@ -318,10 +318,10 @@ footer a{
     display: flex;
     flex-flow: column wrap;
     align-content: space-evenly;
+    justify-content: space-around;
 }
 .partners > .item {
     width: 95%;
-    margin: 8px;
     padding: .5rem;
 }
 .partners > .item > img {
