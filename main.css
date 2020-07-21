@@ -167,9 +167,6 @@ header {
     border-radius: 2px;
     display: block;
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
-    border-image: linear-gradient(to right, rgba(0,0,0,0) 25%, #ccc 25%, #ccc 75%, rgba(0,0,0,0) 75%);
-    border-image-slice: 1;
 }
 .card:last-of-type {
     border-image: none
@@ -182,8 +179,8 @@ header {
 
 .btn {
     color: #fff;
-    background-color: #4c6fa2;
-    border-color: #4c6fa2;
+    background-color: #2e7d32;
+    border-color: #2e7d32;
     text-decoration: none;
     display: inline-block;
     font-weight: 400;
@@ -290,7 +287,9 @@ footer a{
     left: 50%;
     transform: translateX(-50%);
 }
-.modal label h2 {
+.modal label p {
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: end;
 }
 .back-label {
@@ -322,6 +321,60 @@ footer a{
     overflow-y: scroll;
 }
 
+.schedule {
+    display: flex;
+    flex-flow: row wrap;
+}
+.schedule .day {
+    border: #ddd 2px solid;
+    border-radius: 1rem 1rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 1rem;
+    margin: 0 -1px;
+    text-align: center;
+    flex: 1 2 auto;
+}
+@media (min-width: 576px) {
+    .schedule .day {
+        font-size: 2rem;
+    }
+}
+.schedule .day sup {
+    color: #cccccc;
+}
+.schedule #mon:checked ~ .day.mon, .schedule #tue:checked ~ .day.tue, .schedule #thu:checked ~ .day.thu {
+    border-bottom: 0;
+}
+
+.schedule table {
+    min-width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    display: none;
+    text-align: right;
+}
+.schedule #mon:checked ~ table.mon, .schedule #tue:checked ~ table.tue, .schedule #thu:checked ~ table.thu {
+    display: table;
+}
+.schedule .pale {
+    color: #ccc;
+}
+.schedule hr.pale {
+    width: 50%;
+    margin-left: auto;
+}
+.schedule table td {
+    padding: .5rem;
+    border-bottom: black 1px solid;
+    justify-content: space-between;
+}
+.schedule table td:first-child {
+    width: 20%;
+}
+.schedule table tr:last-child td {
+    border-bottom: 0;
+}
 
 .speakers {
     display: flex;
@@ -376,6 +429,9 @@ footer a{
 .speakers > .item > .s_zaharova img {
     transform: translateY(-15.5%);
 }
+.speakers > .item > .s_agzamov img {
+    transform: translateY(-7%);
+}
 
 .partners {
     display: flex;
@@ -392,7 +448,7 @@ footer a{
 }
 @media (min-width: 992px) {
     .partners {
-        height: 420px;
+        height: 480px;
     }
     .partners > .item {
         width: 45%;
@@ -409,12 +465,12 @@ footer a{
 }
 @media (min-width: 1200px) {
     .partners {
-        height: 570px;
+        height: 640px;
     }
 }
 @media (min-width: 1400px) {
     .partners {
-        height: 410px;
+        height: 470px;
     }
     .partners > .item {
         width: 30%;
