@@ -168,9 +168,6 @@ header {
     display: block;
     padding: 1rem;
 }
-.card:last-of-type {
-    border-image: none
-}
 @media (max-width: 860px) {
     .card {
         padding:.5rem
@@ -437,18 +434,18 @@ footer a{
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
-    justify-content: start;
+    justify-content: space-around;
 }
 .partners > .item {
     width: 95%;
-    padding: 1rem .5rem;
+    padding: 1rem .5rem 3rem;
 }
 .partners > .item > img {
     width: 100%;
 }
 @media (min-width: 992px) {
     .partners {
-        height: 480px;
+        height: 710px;
     }
     .partners > .item {
         width: 45%;
@@ -465,12 +462,12 @@ footer a{
 }
 @media (min-width: 1200px) {
     .partners {
-        height: 640px;
+        height: 940px;
     }
 }
 @media (min-width: 1400px) {
     .partners {
-        height: 470px;
+        height: 570px;
     }
     .partners > .item {
         width: 30%;
