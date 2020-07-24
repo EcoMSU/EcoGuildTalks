@@ -395,9 +395,15 @@ footer a{
     .speakers > .item {
         width: 30%;
     }
+    .speakers > .item:last-child:not(:nth-child(even)) {
+        width: 30%;
+    }
 }
 @media (min-width: 1400px) {
     .speakers > .item {
+        width: 23%;
+    }
+    .speakers > .item:last-child:not(:nth-child(even)) {
         width: 23%;
     }
 }
@@ -430,7 +436,11 @@ footer a{
 .speakers > .item > .s_zaharova img {
     transform: translateY(-15.5%);
 }
-.speakers > .item > .s_agzamov img {
+.speakers > .item > .s_akatyeva img {
+    transform: translateY(-25%);
+}
+.speakers > .item > .s_agzamov img,
+.speakers > .item > .s_kalashnikova img {
     transform: translateY(-7%);
 }
 
