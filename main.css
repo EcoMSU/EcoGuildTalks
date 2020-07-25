@@ -61,7 +61,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(6px);
+    filter: blur(5px);
 }
 
 .foreground {
@@ -435,9 +435,6 @@ footer a{
 }
 .speakers > .item > .s_akatyeva img {
     transform: translateY(-25%);
-}
-.speakers > .item > .s_hesuani img {
-    transform: scale(1.5) translateY(15%);
 }
 .speakers > .item > .s_agzamov img,
 .speakers > .item > .s_kalashnikova img {
