@@ -433,11 +433,11 @@ footer a{
     left: 0;
     width: 100%;
 }
-.speakers > .item > .s_zaharova img {
-    transform: translateY(-15.5%);
-}
 .speakers > .item > .s_akatyeva img {
     transform: translateY(-25%);
+}
+.speakers > .item > .s_hesuani img {
+    transform: scale(1.5) translateY(15%);
 }
 .speakers > .item > .s_agzamov img,
 .speakers > .item > .s_kalashnikova img {
