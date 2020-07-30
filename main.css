@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: 'Inter';
-    font-style:  normal;
+    font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url("fonts/Inter-Bold.woff2") format("woff2"),
@@ -21,6 +21,13 @@
     font-display: swap;
     src: url("fonts/Inter-Black.woff2") format("woff2"),
     url("fonts/Inter-Black.woff") format("woff");
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    font-display: fallback;
+    src: url("fonts/Comfortaa-Bold.ttf") format("ttf");
 }
 *, *::before, *::after {
     box-sizing: border-box;
@@ -262,6 +269,13 @@ footer a{
     min-height: 50vh;
     overflow: scroll;
 }
+.tab > h2 {
+    text-align: center;
+}
+.tab > pre {
+    margin: auto;
+    width: fit-content;
+}
 
 .tabcheck:checked ~ section {
     display: block;
@@ -410,14 +424,14 @@ footer a{
 .speakers > .item > .card {
     margin-top: 50%;
     padding: 50% 1rem 1rem;
-    position: relative;
+    position: static;
     width: 100%;
     border-radius: 1rem;
 }
 .speakers > .item > .card > * {
     padding-inline-start: 1rem;
 }
-.speakers > .item > .photo {
+.speakers > .item .photo {
     position: absolute;
     top: 0;
     left: 0;
@@ -427,7 +441,7 @@ footer a{
     overflow: hidden;
     margin: 1rem;
 }
-.speakers > .item > .photo img {
+.speakers > .item .photo img {
     position: absolute;
     top: 0;
     left: 0;
@@ -453,7 +467,7 @@ footer a{
 .partners > .wide {
     padding: 2rem .5rem;
 }
-.partners > .divid {
+.partners > .divider {
     display: none;
 }
 .partners > .item > img {
@@ -468,7 +482,7 @@ footer a{
     }
     .partners > .item:nth-child(odd) { order: 1; }
     .partners > .item:nth-child(even) { order: 2; }
-    .partners > .divid:nth-child(3n+1) {
+    .partners > .divider:nth-child(3n+1) {
         display: block;
         content: "";
         flex-basis: 100%;
@@ -491,14 +505,14 @@ footer a{
     .partners > .item:nth-child(3n+1) { order: 1; }
     .partners > .item:nth-child(3n+2) { order: 2; }
     .partners > .item:nth-child(3n)   { order: 3; }
-    .partners > .divid:nth-child(3n+1) {
+    .partners > .divider:nth-child(3n+1) {
         display: block;
         content: "";
         flex-basis: 100%;
         width: 0;
         order: 1;
     }
-    .partners > .divid:nth-child(3n+2) {
+    .partners > .divider:nth-child(3n+2) {
         display: block;
         content: "";
         flex-basis: 100%;
@@ -517,21 +531,21 @@ footer a{
     .partners > .item:nth-child(4n+2) { order: 2; }
     .partners > .item:nth-child(4n+3) { order: 3; }
     .partners > .item:nth-child(4n)   { order: 4; }
-    .partners > .divid:nth-child(3n+1) {
+    .partners > .divider:nth-child(3n+1) {
         display: block;
         content: "";
         flex-basis: 100%;
         width: 0;
         order: 1;
     }
-    .partners > .divid:nth-child(3n+2) {
+    .partners > .divider:nth-child(3n+2) {
         display: block;
         content: "";
         flex-basis: 100%;
         width: 0;
         order: 2;
     }
-    .partners > .divid:nth-child(3n) {
+    .partners > .divider:nth-child(3n) {
         display: block;
         content: "";
         flex-basis: 100%;
