@@ -61,72 +61,353 @@
         <div class="schedule card">
             <input type="radio" name="days" id="mon" class="hidden" checked>
             <input type="radio" name="days" id="tue" class="hidden">
+            <input type="radio" name="days" id="wed" class="hidden">
             <input type="radio" name="days" id="thu" class="hidden">
             <label class="day mon" for="mon">10<sup>пн</sup></label>
-            <label class="day tue" for="tue">11<sup>вт</sup> &ndash; 12<sup>ср</sup></label>
+            <label class="day tue" for="tue">11<sup>вт</sup></label>
+            <label class="day wed" for="wed">12<sup>ср</sup></label>
             <label class="day thu" for="thu">13<sup>чт</sup></label>
-            <table class="mon">
-                <tr>
-                    <td>
-                        <div>9.30</div>
-                        <div>10.00</div>
-                    </td>
-                    <td>сбор участников</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>10.00</div>
-                        <div>10.20</div>
-                    </td>
-                    <td>открытие конференции</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>10.20</div>
-                        <div>13.00</div>
-                    </td>
-                    <td>выступления спикеров, вопросы</td>
-                </tr>
-            </table>
-            <table class="tue">
-                <tr>
-                    <td>
-                        <div>9.30</div>
-                        <div>10.00</div>
-                    </td>
-                    <td>сбор участников</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>10.00</div>
-                        <div>13.00</div>
-                    </td>
-                    <td>выступления спикеров, вопросы</td>
-                </tr>
-            </table>
-            <table class="thu">
-                <tr>
-                    <td>
-                        <div>9.30</div>
-                        <div>10.00</div>
-                    </td>
-                    <td>сбор участников</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>10.00</div>
-                        <div>12.50</div>
-                    </td>
-                    <td>выступления спикеров, вопросы</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>12.50</div>
-                        <div>13.00</div>
-                    </td>
-                    <td>закрытие конференции</td>
-                </tr>
-            </table>
+            <div class="overflow-table">
+                <table class="mon">
+                    <tr>
+                        <td>
+                            <div> 9:30</div>
+                            <div>10:00</div>
+                        </td>
+                        <td colspan="2">Сбор участников</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:00</div>
+                            <div>10:05</div>
+                        </td>
+                        <td>Эвелина Михалева</td>
+                        <td>Открытие</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:05</div>
+                            <div>10:15</div>
+                        </td>
+                        <td>Елена Панова</td>
+                        <td>Приветственное слово</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:15</div>
+                            <div>10:35</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:35</div>
+                            <div>10:55</div>
+                        </td>
+                        <td>Анастасия Лаукканен</td>
+                        <td>Устойчивое развитие сегодня - кто и что пытается &laquo;устаивать&raquo;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:55</div>
+                            <div>11:15</div>
+                        </td>
+                        <td>Анастасия Акатьева, Анастасия Фролова</td>
+                        <td>Безуглеродное Воскресенье – путь к устойчивому развитию</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:15</div>
+                            <div>11:20</div>
+                        </td>
+                        <td colspan="2">Ролик</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:20</div>
+                            <div>11:35</div>
+                        </td>
+                        <td colspan="2">Перерыв</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:35</div>
+                            <div>11:50</div>
+                        </td>
+                        <td>Анна Хворостяная</td>
+                        <td>Влияние экологии на стратегическое развитие легкой промышленности и индустрии моды</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:50</div>
+                            <div>12:10</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:10</div>
+                            <div>12:30</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:30</div>
+                            <div>13:00</div>
+                        </td>
+                        <td>Алексей Шульгин, Янина Пруденко</td>
+                        <td>Концепция действий Zero Waste Art</td>
+                    </tr>
+                </table>
+                <table class="tue">
+                    <tr>
+                        <td>
+                            <div>9:30</div>
+                            <div>10:00</div>
+                        </td>
+                        <td colspan="2">Сбор участников</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:00</div>
+                            <div>10:25</div>
+                        </td>
+                        <td>Юсеф Хесуани</td>
+                        <td>3d био-печать как способ сохранения природных ресурсов</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:25</div>
+                            <div>10:50</div>
+                        </td>
+                        <td>Елена Константинова</td>
+                        <td>Информационные аэрокосмические технологии сегодня</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:50</div>
+                            <div>11:15</div>
+                        </td>
+                        <td>Роман Чуков</td>
+                        <td>Экономика будущего через реализацию повестки 2030</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:15</div>
+                            <div>11:20</div>
+                        </td>
+                        <td colspan="2">Ролик</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:20</div>
+                            <div>11:35</div>
+                        </td>
+                        <td colspan="2">Перерыв</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:35</div>
+                            <div>12:00</div>
+                        </td>
+                        <td>Роман Саблин</td>
+                        <td>Зеленый офис – от слов к делу</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:00</div>
+                            <div>12:25</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:25</div>
+                            <div>12:50</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:50</div>
+                            <div>13:00</div>
+                        </td>
+                        <td colspan="2">Игра</td>
+                    </tr>
+                </table>
+                <table class="wed">
+                    <tr>
+                        <td>
+                            <div>9:30</div>
+                            <div>10:00</div>
+                        </td>
+                        <td colspan="2">Сбор участников</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:00</div>
+                            <div>10:25</div>
+                        </td>
+                        <td>Наби Агзамов</td>
+                        <td>Масштабы устойчивости&nbsp;– ландшафт как многофункциональная инфраструктура XXI века</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:25</div>
+                            <div>10:50</div>
+                        </td>
+                        <td>Вячеслав Иванов</td>
+                        <td>Зелено-водный каркас региона как элемент формирования нового качества жизни в городе</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:50</div>
+                            <div>11:15</div>
+                        </td>
+                        <td>Евгений Малыгин, Евгения Подарина</td>
+                        <td>Экотуризм и его особенности</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:15</div>
+                            <div>11:20</div>
+                        </td>
+                        <td colspan="2">Ролик</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:20</div>
+                            <div>11:35</div>
+                        </td>
+                        <td colspan="2">Перерыв</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:35</div>
+                            <div>12:00</div>
+                        </td>
+                        <td>Вита Саар</td>
+                        <td>Экологизация впечатлений</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:00</div>
+                            <div>12:20</div>
+                        </td>
+                        <td>Ольга Мироненко</td>
+                        <td>Экологичные путешествия</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:20</div>
+                            <div>12:40</div>
+                        </td>
+                        <td>Татьяна Болдорева</td>
+                        <td>Экологичные путешествия</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:40</div>
+                            <div>13:00</div>
+                        </td>
+                        <td>спикер уточняется</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="thu">
+                    <tr>
+                        <td>
+                            <div>9:30</div>
+                            <div>10:00</div>
+                        </td>
+                        <td colspan="2">Сбор участников</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:00</div>
+                            <div>10:25</div>
+                        </td>
+                        <td>Наталия Киселева</td>
+                        <td>Экологическое просвещение через реализацию глобального проекта для детей и молодежи Climate Action</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:25</div>
+                            <div>10:50</div>
+                        </td>
+                        <td>Анна Нафиева</td>
+                        <td>Интерактивное экопросвещение. Креативные решения экологических проблем</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>10:50</div>
+                            <div>11:00</div>
+                        </td>
+                        <td>Злата Яковчук</td>
+                        <td>Экопросвещение, экоактивизм и пути их реализации</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:00</div>
+                            <div>11:05</div>
+                        </td>
+                        <td>Ролик</td>
+                        <td>просвещение</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:05</div>
+                            <div>11:20</div>
+                        </td>
+                        <td colspan="2">перерыв</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:20</div>
+                            <div>11:45</div>
+                        </td>
+                        <td>Ольга Калашникова</td>
+                        <td>Северсталь и экологическая программа России</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>11:45</div>
+                            <div>12:10</div>
+                        </td>
+                        <td>Татьяна Митрова</td>
+                        <td>Экология и бизнес</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:10</div>
+                            <div>12:35</div>
+                        </td>
+                        <td>Денис Шулаков</td>
+                        <td>Зеленое финансирование</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:35</div>
+                            <div>12:55</div>
+                        </td>
+                        <td colspan="2">Игра</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>12:55</div>
+                            <div>13:00</div>
+                        </td>
+                        <td>Эвелина Михалева</td>
+                        <td>Закрытие конференции</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
     <section id="speakers">

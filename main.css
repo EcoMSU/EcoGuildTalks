@@ -337,6 +337,7 @@ footer a{
     flex-flow: row wrap;
 }
 .schedule .day {
+    width: 25%;
     border: #ddd 2px solid;
     border-radius: 1rem 1rem 0 0;
     font-size: 1.3rem;
@@ -354,30 +355,52 @@ footer a{
 .schedule .day sup {
     color: #cccccc;
 }
-.schedule #mon:checked ~ .day.mon, .schedule #tue:checked ~ .day.tue, .schedule #thu:checked ~ .day.thu {
+.schedule #mon:checked ~ .day.mon,
+.schedule #tue:checked ~ .day.tue,
+.schedule #wed:checked ~ .day.wed,
+.schedule #thu:checked ~ .day.thu {
     border-bottom: 0;
 }
 
-.schedule table {
-    min-width: 75%;
+.schedule .overflow-table {
+    overflow-x: scroll;
+    width: 100%;
     margin: auto;
+}
+@media (min-width: 1200px) {
+    .schedule .overflow-table {
+        width: 80%;
+        overflow-x: auto;
+    }
+}
+@media (min-width: 1400px) {
+    .schedule .overflow-table {
+        width: 70%;
+        overflow-x: auto;
+    }
+}
+
+.schedule table {
+    min-width: 100%;
     border-collapse: collapse;
     display: none;
     text-align: right;
 }
-.schedule #mon:checked ~ table.mon, .schedule #tue:checked ~ table.tue, .schedule #thu:checked ~ table.thu {
+.schedule #mon:checked ~ div > table.mon,
+.schedule #tue:checked ~ div > table.tue,
+.schedule #wed:checked ~ div > table.wed,
+.schedule #thu:checked ~ div > table.thu {
     display: table;
 }
-.schedule .pale {
-    color: #ccc;
+.schedule table tr {
+    height: 3rem;
 }
-.schedule hr.pale {
-    width: 50%;
-    margin-left: auto;
+.schedule table tr:nth-child(even) {
+    background-color: #b9f6ca80;
 }
 .schedule table td {
     padding: .5rem;
-    border-bottom: black 1px solid;
+    border-bottom: #808080 1px solid;
     justify-content: space-between;
 }
 .schedule table td:first-child {
