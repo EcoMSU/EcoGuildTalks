@@ -478,6 +478,39 @@ footer a{
     transform: translateY(-7%);
 }
 
+.gen_partner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.gen_partner > * {
+    flex: 1 100%;
+}
+.gen_partner > h1 {
+    font-size: 2rem;
+    margin: .5rem;
+}
+.gen_partner > h2 {
+    margin: 1.5rem 0 .5rem;
+    font-size: 1.7rem;
+}
+.gen_partner > img {
+    width: 100%;
+    padding: 0 12% 0 8%;
+}
+@media (min-width: 1200px) {
+    .gen_partner > img {
+        padding: 0 17% 0 13%;
+    }
+}
+@media (min-width: 1400px) {
+    .gen_partner > img {
+        padding: 0 22% 0 18%;
+    }
+}
 .partners {
     display: flex;
     flex-flow: column wrap;
