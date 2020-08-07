@@ -491,7 +491,7 @@ footer a{
 }
 @media (min-width: 768px) {
     .partners {
-        height: 1110px;
+        height: 1160px;
     }
     .partners > .item {
         width: 47%;
@@ -508,12 +508,12 @@ footer a{
 }
 @media (min-width: 992px) {
     .partners {
-        height: 1210px;
+        height: 1280px;
     }
 }
 @media (min-width: 1200px) {
     .partners {
-        height: 880px;
+        height: 900px;
     }
     .partners > .item {
         width: 30%;
