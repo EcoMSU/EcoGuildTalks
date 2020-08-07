@@ -470,18 +470,11 @@ footer a{
     left: 0;
     width: 100%;
 }
-.speakers > .item > .s_akatyeva img {
-    transform: translateY(-25%);
-}
-.speakers > .item > .s_agzamov img,
-.speakers > .item > .s_kalashnikova img {
-    transform: translateY(-7%);
-}
 
 .partners {
     display: flex;
     flex-flow: column wrap;
-    align-content: space-between;
+    align-content: space-around;
 }
 .partners > .item {
     width: 95%;
@@ -498,10 +491,10 @@ footer a{
 }
 @media (min-width: 768px) {
     .partners {
-        height: 1160px;
+        height: 1110px;
     }
     .partners > .item {
-        width: 45%;
+        width: 47%;
     }
     .partners > .item:nth-child(odd) { order: 1; }
     .partners > .item:nth-child(even) { order: 2; }
@@ -515,12 +508,12 @@ footer a{
 }
 @media (min-width: 992px) {
     .partners {
-        height: 1270px;
+        height: 1210px;
     }
 }
 @media (min-width: 1200px) {
     .partners {
-        height: 870px;
+        height: 880px;
     }
     .partners > .item {
         width: 30%;
@@ -545,7 +538,7 @@ footer a{
 }
 @media (min-width: 1400px) {
     .partners {
-        height: 670px;
+        height: 630px;
     }
     .partners > .item {
         width: 24%;
